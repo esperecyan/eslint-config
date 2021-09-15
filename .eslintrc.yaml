@@ -1,0 +1,11 @@
+extends: ./index.js
+
+env:
+    node: true
+
+parserOptions:
+    sourceType: script
+
+rules:
+    strict: [warn, global]
+    quote-props: [warn, consistent-as-needed]

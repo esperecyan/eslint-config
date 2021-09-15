@@ -1,0 +1,20 @@
+{
+	"name": "@esperecyan/eslint-config",
+	"version": "1.0.1",
+	"keywords": [
+		"eslint",
+		"eslintconfig"
+	],
+	"license": "MPL-2.0",
+	"author": {
+		"name": "100の人",
+		"url": "https://www.npmjs.com/~esperecyan"
+	},
+	"main": "index.js",
+	"devDependencies": {
+		"eslint": "^7.16.0"
+	},
+	"peerDependencies": {
+		"eslint": ">= 4.6"
+	}
+}
