@@ -66,7 +66,7 @@ module.exports = {
 		'space-before-blocks': 'warn',
 		'space-before-function-paren': ['warn', {anonymous: 'always', named: 'never'}],
 		'space-in-parens': 'warn',
-		'indent': ['warn', 'tab', {SwitchCase: 1, outerIIFEBody: 'off'}],
+		'indent': ['warn', 'tab', {SwitchCase: 1, outerIIFEBody: 'off', ignoredNodes: ['TemplateLiteral *']}],
 
 		// その他
 		'quotes': ['warn', 'single', {avoidEscape: true}],
