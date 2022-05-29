@@ -3,12 +3,11 @@
 module.exports = {
 	extends: 'eslint:recommended',
 	env: {
-		es2021: true,
+		es2021: true, // Firefox ESR 91 (サポート期限: 2022年9月19日)、および Safari 15 が、ECMAScript 2022 の Object.hasOwn() などに未対応
 		browser: true,
 	},
 	parserOptions: {
 		sourceType: 'module',
-		ecmaVersion: 2020, // Firefox ESR 78 (サポート期限: 2021年7月) で ECMAScript 2021 の「??=」などは未対応
 	},
 	rules: {
 		// ECMAScript 2015
