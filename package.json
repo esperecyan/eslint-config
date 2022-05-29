@@ -4,6 +4,10 @@
 	"publishConfig": {
 		"access": "public"
 	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/esperecyan/eslint-config.git"
+	},
 	"keywords": [
 		"eslint",
 		"eslintconfig"
