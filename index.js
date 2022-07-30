@@ -85,7 +85,7 @@ module.exports = {
 		'semi': 'warn',
 		'spaced-comment': ['warn', 'always', {
 			block: {markers: ['global', 'exported', 'eslint', 'eslint-disable', 'eslint-enable', 'eslint-env']},
-			line: {exceptions: ['/'], markers: ['//////', 'eslint-disable-line']},
+			line: {exceptions: ['/'], markers: ['//////', 'eslint-disable-line', 'eslint-disable-next-line']},
 		}],
 		'prefer-spread': 'warn',
 	},
