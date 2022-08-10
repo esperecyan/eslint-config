@@ -74,7 +74,6 @@ module.exports = {
 		'no-alert': 'warn',
 		'no-floating-decimal': 'warn',
 		'no-unmodified-loop-condition': 'error',
-		'wrap-iife': ['warn', 'inside'],
 		'yoda': ['warn', 'never', {exceptRange: true}],
 		'comma-dangle': ['warn', 'always-multiline'],
 		'comma-style': 'warn',
