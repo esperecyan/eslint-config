@@ -40,6 +40,7 @@ module.exports = {
 		'no-class-assign': 'warn',
 		'no-dupe-class-members': 'warn',
 		'require-yield': 'warn',
+		'no-constant-condition': 'warn',
 
 		// strict mode
 		'no-caller': 'error',
