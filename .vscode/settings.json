@@ -1,4 +1,3 @@
 {
-	"editor.rulers": [ 120 ],
-	"eslint.alwaysShowStatus": true
+	"editor.rulers": [ 120 ]
 }
