@@ -4,13 +4,21 @@
 module.exports = {
 	extends: 'eslint:recommended',
 	env: {
-		es2021: true, // Firefox ESR 91 (サポート期限: 2022年9月19日)、および Safari 15 が、ECMAScript 2022 の Object.hasOwn() などに未対応
+		es2022: true,
 		browser: true,
 	},
 	parserOptions: {
 		sourceType: 'module',
 	},
 	rules: {
+		'no-restricted-syntax': [
+			'error',
+			{
+				selector: 'StaticBlock',
+				message: 'Safari (2023-03現在最新のバージョン16) ではクラスの静的初期化ブロックがサポートされていません。',
+			},
+		],
+
 		// ECMAScript 2015
 		'no-var': 'warn',
 		'prefer-const': ['warn', {ignoreReadBeforeAssign: true}],
