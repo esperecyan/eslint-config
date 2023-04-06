@@ -21,7 +21,7 @@ module.exports = {
 
 		// ECMAScript 2015
 		'no-var': 'warn',
-		'prefer-const': ['warn', {ignoreReadBeforeAssign: true}],
+		'prefer-const': ['warn', {destructuring: 'all', ignoreReadBeforeAssign: true}],
 		'no-use-before-define': ['error', {functions: false, classes: false}],
 		'rest-spread-spacing': 'warn',
 		'require-await': 'warn',
