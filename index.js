@@ -49,7 +49,7 @@ module.exports = {
 		'no-class-assign': 'warn',
 		'no-dupe-class-members': 'warn',
 		'require-yield': 'warn',
-		'no-constant-condition': 'warn',
+		'no-constant-condition': ['warn', {checkLoops: false}],
 
 		// strict mode
 		'no-caller': 'error',
