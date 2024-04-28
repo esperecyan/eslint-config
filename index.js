@@ -18,14 +18,6 @@ export default [
 			'@stylistic': stylistic,
 		},
 		rules: {
-			'no-restricted-syntax': [
-				'error',
-				{
-					selector: 'StaticBlock',
-					message: 'Safari (2023-03現在最新のバージョン16) ではクラスの静的初期化ブロックがサポートされていません。',
-				},
-			],
-
 			// ECMAScript 2015
 			'no-var': 'warn',
 			'prefer-const': ['warn', {destructuring: 'all', ignoreReadBeforeAssign: true}],
