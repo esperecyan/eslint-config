@@ -1,4 +1,5 @@
 import js from '@eslint/js';
+import stylistic from '@stylistic/eslint-plugin';
 import globals from 'globals';
 
 /** @type {import('eslint').Linter.FlatConfig[]} */
@@ -13,6 +14,9 @@ export default [
 				sourceType: 'module',
 			},
 		},
+		plugins: {
+			'@stylistic': stylistic,
+		},
 		rules: {
 			'no-restricted-syntax': [
 				'error',
@@ -26,7 +30,7 @@ export default [
 			'no-var': 'warn',
 			'prefer-const': ['warn', {destructuring: 'all', ignoreReadBeforeAssign: true}],
 			'no-use-before-define': ['error', {functions: false, classes: false}],
-			'rest-spread-spacing': 'warn',
+			'@stylistic/rest-spread-spacing': 'warn',
 			'require-await': 'warn',
 			'no-irregular-whitespace': ['error', {
 				skipStrings: true,
@@ -48,7 +52,6 @@ export default [
 			'no-delete-var': 'warn',
 			'no-shadow-restricted-names': 'warn',
 			'no-unused-vars': 'warn',
-			'no-mixed-spaces-and-tabs': 'warn',
 			'no-class-assign': 'warn',
 			'no-dupe-class-members': 'warn',
 			'require-yield': 'warn',
@@ -65,37 +68,42 @@ export default [
 			// PSR-2 風
 			'camelcase': ['warn', {properties: 'never'}],
 			'curly': 'warn',
-			'no-multi-spaces': 'warn',
-			'eol-last': 'warn',
-			'keyword-spacing': 'warn',
-			'linebreak-style': 'warn',
-			'max-len': ['warn', {code: 120}],
-			'max-statements-per-line': 'warn',
-			'func-call-spacing': 'warn',
-			'no-trailing-spaces': 'warn',
+			'@stylistic/no-multi-spaces': 'warn',
+			'@stylistic/eol-last': 'warn',
+			'@stylistic/keyword-spacing': 'warn',
+			'@stylistic/linebreak-style': 'warn',
+			'@stylistic/max-len': ['warn', {code: 120}],
+			'@stylistic/max-statements-per-line': 'warn',
+			'@stylistic/func-call-spacing': 'warn',
+			'@stylistic/no-trailing-spaces': 'warn',
 			'no-underscore-dangle': 'warn',
-			'semi-spacing': 'warn',
-			'space-before-blocks': 'warn',
-			'space-before-function-paren': ['warn', {anonymous: 'always', named: 'never'}],
-			'space-in-parens': 'warn',
-			'indent': ['warn', 'tab', {SwitchCase: 1, outerIIFEBody: 'off', ignoredNodes: ['TemplateLiteral *']}],
+			'@stylistic/semi-spacing': 'warn',
+			'@stylistic/space-before-blocks': 'warn',
+			'@stylistic/space-before-function-paren': ['warn', {anonymous: 'always', named: 'never'}],
+			'@stylistic/space-in-parens': 'warn',
+			'@stylistic/no-mixed-spaces-and-tabs': 'warn',
+			'@stylistic/indent': [
+				'warn',
+				'tab',
+				{SwitchCase: 1, outerIIFEBody: 'off', ignoredNodes: ['TemplateLiteral *']},
+			],
 
 			// その他
-			'quotes': ['warn', 'single', {avoidEscape: true}],
-			'dot-location': ['warn', 'property'],
+			'@stylistic/quotes': ['warn', 'single', {avoidEscape: true}],
+			'@stylistic/dot-location': ['warn', 'property'],
 			'eqeqeq': 'warn',
 			'no-alert': 'warn',
-			'no-floating-decimal': 'warn',
+			'@stylistic/no-floating-decimal': 'warn',
 			'no-unmodified-loop-condition': 'error',
 			'yoda': ['warn', 'never', {exceptRange: true}],
-			'comma-dangle': ['warn', 'always-multiline'],
-			'comma-style': 'warn',
-			'new-parens': 'warn',
-			'no-whitespace-before-property': 'warn',
-			'operator-linebreak': ['warn', 'before'],
-			'quote-props': ['warn', 'as-needed'],
-			'semi': 'warn',
-			'spaced-comment': ['warn', 'always', {
+			'@stylistic/comma-dangle': ['warn', 'always-multiline'],
+			'@stylistic/comma-style': 'warn',
+			'@stylistic/new-parens': 'warn',
+			'@stylistic/no-whitespace-before-property': 'warn',
+			'@stylistic/operator-linebreak': ['warn', 'before'],
+			'@stylistic/quote-props': ['warn', 'as-needed'],
+			'@stylistic/semi': 'warn',
+			'@stylistic/spaced-comment': ['warn', 'always', {
 				block: {markers: ['global', 'exported', 'eslint', 'eslint-disable', 'eslint-enable', 'eslint-env']},
 				line: {exceptions: ['/'], markers: ['//////', 'eslint-disable-line', 'eslint-disable-next-line']},
 			}],

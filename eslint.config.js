@@ -14,7 +14,7 @@ export default [
 			},
 		},
 		rules: {
-			'quote-props': ['warn', 'consistent-as-needed'],
+			'@stylistic/quote-props': ['warn', 'consistent-as-needed'],
 		},
 	},
 ];
