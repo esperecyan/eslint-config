@@ -30,5 +30,8 @@
 	},
 	"peerDependencies": {
 		"eslint": ">= 9"
+	},
+	"scripts": {
+		"fix": "eslint --fix"
 	}
 }
