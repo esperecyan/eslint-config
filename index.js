@@ -31,23 +31,8 @@ export default [
 				skipTemplates: true,
 			}],
 
-			// eslint:recommended の構文エラー以外を warn に
-			'no-case-declarations': 'warn',
-			'no-empty-pattern': 'warn',
-			'no-fallthrough': 'warn',
-			'no-global-assign': 'warn',
-			'no-redeclare': 'warn',
-			'no-self-assign': 'warn',
-			'no-unused-labels': 'warn',
-			'no-useless-catch': 'warn',
-			'no-useless-escape': 'warn',
-			'no-delete-var': 'warn',
-			'no-shadow-restricted-names': 'warn',
-			'no-unused-vars': 'warn',
-			'no-class-assign': 'warn',
-			'no-dupe-class-members': 'warn',
-			'require-yield': 'warn',
-			'no-constant-condition': ['warn', {checkLoops: false}],
+			// eslint:recommended の変更
+			'no-constant-condition': ['error', {checkLoops: false}],
 
 			// strict mode
 			'no-caller': 'error',
