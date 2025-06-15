@@ -2,7 +2,7 @@ import js from '@eslint/js';
 import stylistic from '@stylistic/eslint-plugin';
 import globals from 'globals';
 
-/** @type {import('eslint').Linter.FlatConfig[]} */
+/** @type {import('eslint').Linter.Config[]} */
 export default [
 	js.configs.recommended,
 	{
