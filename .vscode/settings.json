@@ -1,8 +1,12 @@
 {
+	"[javascript]": {
+		"editor.defaultFormatter": "dbaeumer.vscode-eslint"
+	},
 	"editor.rulers": [120],
 	"editor.codeActionsOnSave": {
 		"source.fixAll.eslint": "explicit"
 	},
+	"eslint.format.enable": true,
 	"eslint.rules.customizations": [
 		{"rule": "@stylistic/*", "severity": "off"},
 		{"rule": "@stylistic/max-len", "severity": "default"},
