@@ -1,5 +1,5 @@
 import globals from 'globals';
-import { readGitignoreFiles } from 'eslint-gitignore';
+import {readGitignoreFiles} from 'eslint-gitignore';
 import esperecyanConfig from './index.js';
 
 /** @type {import('eslint').Linter.Config[]} */
