@@ -19,6 +19,7 @@
 	},
 	"type": "module",
 	"main": "index.js",
+	"types": "types/index.d.ts",
 	"dependencies": {
 		"@stylistic/eslint-plugin": "^4.4.1"
 	},
