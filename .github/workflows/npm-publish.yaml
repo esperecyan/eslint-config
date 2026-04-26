@@ -4,6 +4,10 @@ on:
 
 jobs:
     publish:
+        timeout-minutes: 5
+        permissions:
+            contents: read
+            id-token: write
         runs-on: ubuntu-24.04
         steps:
             - uses: actions/checkout@v6
