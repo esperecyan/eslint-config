@@ -36,5 +36,6 @@
 	},
 	"scripts": {
 		"fix": "eslint --fix"
-	}
+	},
+	"packageManager": "yarn@4.14.1"
 }
